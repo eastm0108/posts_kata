@@ -13,3 +13,20 @@
 7. 開始撰寫 server.js 相關 CRUD 邏輯
 8. 開發完成後新增 `git init`
 9. 部署 heroku
+
+## 本地端測試
+
+新增 `config.json` 檔案，新增環境變數名稱
+
+```
+PORT=3005
+DATABASE=<XXX>
+DATABASE_PASSWORD=<XXX>
+```
+
+安裝套件與開啟服務
+
+```bash
+  npm install
+  npm start
+```

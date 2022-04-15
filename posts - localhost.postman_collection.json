@@ -1,0 +1,97 @@
+{
+    "info": {
+        "_postman_id": "1d6d8021-26db-420e-9a02-e9aaf0be7427",
+        "name": "posts - localhost",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "取得 posts",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "localhost:3005/posts",
+                    "host": ["localhost"],
+                    "port": "3005",
+                    "path": ["posts"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "新增 posts",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"黃小明\",\n    \"tags\": [\"帥哥\", \"迴圈地獄\"],\n    \"type\": \"person\",\n    \"image\": \"\",\n    \"content\": \"黃小名很帥\",\n    \"likes\": 9999,\n    \"comments\": 9999\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "localhost:3005/posts",
+                    "host": ["localhost"],
+                    "port": "3005",
+                    "path": ["posts"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "刪除全部 posts",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "localhost:3005/posts",
+                    "host": ["localhost"],
+                    "port": "3005",
+                    "path": ["posts"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "刪除單筆 posts",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                    "raw": "localhost:3005/posts/1234",
+                    "host": ["localhost"],
+                    "port": "3005",
+                    "path": ["posts", "1234"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "修改 posts",
+            "request": {
+                "method": "PATCH",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"name\": \"黃小明\",\n    \"tags\": [\"帥哥\", \"迴圈地獄\"],\n    \"type\": [\"person\"],\n    \"image\": \"\",\n    \"content\": \"黃小名很帥\",\n    \"likes\": 9999,\n    \"comments\": 9999\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "localhost:3005/posts/1234",
+                    "host": ["localhost"],
+                    "port": "3005",
+                    "path": ["posts", "1234"]
+                }
+            },
+            "response": []
+        }
+    ]
+}
