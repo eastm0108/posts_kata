@@ -12,14 +12,6 @@ const HTTP_STATUS = {
     INTERNAL_SERVER_ERROR: 500,
 };
 
-const REQUEST_METHOD = {
-    GET: 'GET',
-    POST: 'POST',
-    DELETE: 'DELETE',
-    PATCH: 'PATCH',
-    OPTIONS: 'OPTIONS',
-};
-
 const ERROR_MESSAGE = {
     NOT_FOUND_ROUTE: '查無此頁面',
     DATA_ERROR: '資料錯誤',
@@ -36,7 +28,6 @@ const FIND_INDEX_RESULT = {
 module.exports = {
     HEADERS,
     HTTP_STATUS,
-    REQUEST_METHOD,
     ERROR_MESSAGE,
     FIND_INDEX_RESULT,
 };
