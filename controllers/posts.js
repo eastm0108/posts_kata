@@ -11,7 +11,6 @@ const posts = {
                 errorHandle(res, {
                     code: HTTP_STATUS.BAD_REQUEST,
                     message: ERROR_MESSAGE.NOT_FOUND_ID_OR_DATA_ERROR,
-                    error,
                 });
             } else {
                 const newPost = await Posts.create({ ...post });
@@ -53,7 +52,6 @@ const posts = {
                     errorHandle(res, {
                         code: HTTP_STATUS.BAD_REQUEST,
                         message: ERROR_MESSAGE.NOT_FOUND_ID_OR_DATA_ERROR,
-                        error,
                     });
                 }
             } catch (error) {
@@ -74,7 +72,6 @@ const posts = {
                 errorHandle(res, {
                     code: HTTP_STATUS.BAD_REQUEST,
                     message: ERROR_MESSAGE.NOT_FOUND_ID_OR_DATA_ERROR,
-                    error,
                 });
             } else {
                 const result = await Posts.findByIdAndUpdate(id, { ...post });
@@ -85,7 +82,6 @@ const posts = {
                     errorHandle(res, {
                         code: HTTP_STATUS.BAD_REQUEST,
                         message: ERROR_MESSAGE.NOT_FOUND_ID_OR_DATA_ERROR,
-                        error,
                     });
                 }
             }
